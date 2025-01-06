@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    docker { image 'python:3.9-slim' }
+    docker { image 'ubuntu:20.04' }
   }
   stages {
     stage('Test') {
       steps {
-        sh 'python --version'
+        sh 'cat /etc/os-release'
       }
     }
   }
