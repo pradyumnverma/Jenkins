@@ -1,6 +1,9 @@
 pipeline {
   agent {
-    label 'docker'
+    docker { 
+        image 'docker:latest' // Use Docker as the agent
+        args '--privileged -v /var/run/docker.sock:/var/run/docker.sock' // Grant access to Docker
+    }
   }
   stages {
     stage('Test') {
