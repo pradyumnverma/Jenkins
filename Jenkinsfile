@@ -8,9 +8,8 @@ pipeline {
         sh 'cat /etc/os-release'
       }
     }
-  }
-  stage('Build Docker Image') {
-    steps {
+    stage('Build Docker Image') {
+      steps {
         script {
             // Define Docker image name and tag
             def imageName = 'my-docker-image'
@@ -18,7 +17,8 @@ pipeline {
 
             // Build the Docker image
             docker.build("${imageName}:${imageTag}", './SimpleApp')
-         }
+        }
       }
-   }
+    }
+  }
 }
