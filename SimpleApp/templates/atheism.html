@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atheism</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Centered container */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 2em;
+            color: #4CAF50; /* Green */
+            margin-bottom: 20px;
+        }
+
+        /* Styled box for text */
+        .text-box {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 15px;
+            border: 1px solid #c8e6c9; /* Green border */
+            border-radius: 8px;
+            color: #2e7d32; /* Dark green text */
+            font-size: 1.2em;
+        }
+
+        /* Footer or additional text */
+        .info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1>Random Jokes</h1>
-    <p>{{ text }}</p>
+    <div class="container">
+        <h1>Random Jokes</h1>
+        <div class="text-box">
+            {{ text }}
+        </div>
+        <p class="info">Enjoy a laugh! Refresh the page for a new joke.</p>
+    </div>
 </body>
 </html>
