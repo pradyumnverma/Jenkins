@@ -19,8 +19,7 @@ pipeline {
             sh """
             cd SimpleApp/
             docker build -t ${imageName}:${imageTag} .
-            docker save -o my-docker-image.tar my-docker-image:latest
-            pwd       
+            docker save -o my-docker-image.tar my-docker-image:latest      
             """
         }
       }
