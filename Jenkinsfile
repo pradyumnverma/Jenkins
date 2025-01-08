@@ -14,7 +14,7 @@ pipeline {
             def imageTag = 'latest'
 
             // Build the Docker image
-            sh "docker build -t ${imageName}:${imageTag} ."
+            sh "docker build -t ${imageName}:${imageTag} ./SimpleApp"
         }
       }
     }
