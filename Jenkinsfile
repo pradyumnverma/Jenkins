@@ -9,4 +9,16 @@ pipeline {
       }
     }
   }
+  stage('Build Docker Image') {
+    steps {
+        script {
+            // Define Docker image name and tag
+            def imageName = 'my-docker-image'
+            def imageTag = 'latest'
+
+            // Build the Docker image
+            docker.build("${imageName}:${imageTag}", '.')
+         }
+      }
+   }
 }
