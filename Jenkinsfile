@@ -1,6 +1,6 @@
 pipeline {
   agent {
-        label 'docker' // Runs on a node labeled 'docker'
+        label 'Docker' // Runs on a node labeled 'docker'
   }
   stages {
     stage('Test') {
