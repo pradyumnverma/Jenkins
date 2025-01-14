@@ -20,7 +20,7 @@ def atheism():
 # Define a route for the movie search page
 @app.route('/movie', methods=['GET', 'POST'])
 def movie():
-    OMDB_API_KEY = '3bfcdb1'
+    OMDB_API_KEY = 'xxxxxxx'
     movie_data = None  # Initialize the variable to store movie details
     error_message = None
 
